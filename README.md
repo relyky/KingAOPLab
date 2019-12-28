@@ -5,10 +5,10 @@
 # 實作原理
 使用 .Net Framework 4.x 才開始支援的 [System.Dynamic](https://docs.microsoft.com/zh-tw/dotnet/api/system.dynamic?view=netframework-4.8) 實作出來的。
 關鍵中的關鍵字是[IDynamicMetaObjectProvider 介面](https://docs.microsoft.com/zh-tw/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.8)與[DynamicMetaObject](https://docs.microsoft.com/zh-tw/dotnet/api/system.dynamic.dynamicmetaobject?view=netframework-4.8)。
-當然還需搭配[Expression 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.linq.expressions.expression?view=netframework-4.8)等等相關項目才能完成。真有興趣就拜讀這篇文章吧[Implementing Dynamic Interfaces]。   
+當然還需搭配[Expression 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.linq.expressions.expression?view=netframework-4.8)等等相關項目才能完成。真有興趣就拜讀這篇文章吧[Implementing Dynamic Interfaces](https://github.com/relyky/KingAOPLab/blob/master/doc/implementing-dynamic-interfaces.pdf)。
 
 ## 架構分析圖
-花了一、兩天時間讀碼，把KingAOP的主架構圖逆向弄出來。看得懂就恭禧你了；看不懂就當藝術品看吧。
-[圖]
-
+花了一、兩天時間讀碼，把KingAOP的主架構圖逆向弄出來。看得懂就恭禧你了；看不懂就當藝術品看吧。   
+<img src="https://github.com/relyky/KingAOPLab/blob/master/doc/KingAOP%20%E7%B5%90%E6%A7%8B%E5%88%86%E6%9E%90%E9%A1%9E%E5%88%A5%E5%9C%96.png?raw=true" alt="KingAOP結構分析類別圖">
+   
 (EOF)
