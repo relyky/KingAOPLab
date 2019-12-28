@@ -13,13 +13,13 @@ namespace KingAOPLab
         {
             Console.WriteLine("Step 1");
             Console.WriteLine("Step 2");
-            //throw new ApplicationException("測試例外！");
+            throw new ApplicationException("測試例外！");
             Console.WriteLine("Step 3");
             return "Success Result";
         }
 
         [MyPropertyAspect]
-        public string foo
+        public string Foo
         {
             get;
             set;

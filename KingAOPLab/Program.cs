@@ -14,20 +14,28 @@ namespace KingAOPLab
     {
         static void Main(string[] args)
         {
+            BasicTest01();
+        }
+
+        static void BasicTest01()
+        {
             try
             {
-                var biz = new MyBusinessClass();
+                ///※ 必需回傳 dynamic 才能有效觸發KingAOP。 
+                dynamic biz = new MyBusinessClass();
 
                 // 測試 method aspect
                 string ret = biz.HelloWorldCall();
                 Console.WriteLine("Return " + ret);
 
                 // 測試 property aspect
-                biz.foo = "我是誰";
-                Console.WriteLine("foo " + biz.foo);
+                biz.Foo = "我是誰";
+                Console.WriteLine("foo " + biz.Foo);
+
+                Console.WriteLine("執行成功。");
             }
             catch (Exception ex) {
-                Console.WriteLine("Got Exception " + ex.Message);
+                Console.WriteLine("執行失敗！" + ex.Message);
             }
 
             Console.WriteLine("Press any key to continue.");
