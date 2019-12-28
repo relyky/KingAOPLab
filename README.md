@@ -5,7 +5,7 @@
 # 實作原理
 使用 .Net Framework 4.x 才開始支援的 [System.Dynamic](https://docs.microsoft.com/zh-tw/dotnet/api/system.dynamic?view=netframework-4.8) 實作出來的。
 關鍵中的關鍵字是[IDynamicMetaObjectProvider 介面](https://docs.microsoft.com/zh-tw/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.8)與[DynamicMetaObject](https://docs.microsoft.com/zh-tw/dotnet/api/system.dynamic.dynamicmetaobject?view=netframework-4.8)。
-當然還需搭配[Expression 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.linq.expressions.expression?view=netframework-4.8)等等相關項目才能完成。真有興趣就拜讀這篇文章吧[Implementing Dynamic Interfaces](https://github.com/relyky/KingAOPLab/blob/master/doc/implementing-dynamic-interfaces.pdf)。
+當然還需搭配[Expression 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.linq.expressions.expression?view=netframework-4.8)、[Attribute 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.attribute?view=netframework-4.8)等等相關項目才能完成。真有興趣就拜讀這篇文章吧[Implementing Dynamic Interfaces](https://github.com/relyky/KingAOPLab/blob/master/doc/implementing-dynamic-interfaces.pdf)。
 
 ## 架構分析圖
 花了一、兩天時間讀碼，把KingAOP的主架構圖逆向弄出來。看得懂就恭禧你了；看不懂就當藝術品看吧。   
