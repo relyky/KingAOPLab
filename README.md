@@ -14,12 +14,15 @@
 # 測試紀錄
 
 #### 測試紀錄-無AOP
+<pre>
 Step 1
 Step 2
 執行失敗！測試例外！
 Press any key to continue.
+</pre>
 
 #### 測試紀錄-有AOP
+<pre>
 OnEntry
 Step 1
 Step 2
@@ -31,5 +34,5 @@ OnGetValue
 foo I am god!
 執行成功。 <--- 明明失敗卻成功。
 Press any key to continue.
-
+</pre>
 (EOF)
