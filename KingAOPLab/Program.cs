@@ -14,8 +14,30 @@ namespace KingAOPLab
     {
         static void Main(string[] args)
         {
-            BasicTest01();
+            //BasicTest01();
+            BasicTest02();
         }
+
+        static void BasicTest02()
+        {
+            try
+            {
+                ///※ 必需回傳 dynamic 才能有效觸發KingAOP。 
+                dynamic biz = new MyBusinessClass2();
+
+                biz.QryFormData("Foo", 987, true);
+
+                Console.WriteLine("執行成功。");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("執行失敗！" + ex.Message);
+            }
+
+            Console.WriteLine("Press any key to continue.");
+            Console.ReadKey();
+        }
+
 
         static void BasicTest01()
         {

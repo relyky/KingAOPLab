@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyAspects\IgnoreAspect.cs" />
+    <Compile Include="MyAspects\LogAspect.cs" />
+    <Compile Include="MyBusinessClass2.cs" />
     <Compile Include="MyBusinessClass.cs" />
     <Compile Include="MyAspects\MyMethodAspect.cs" />
     <Compile Include="MyAspects\MyPropertyAspect.cs" />
