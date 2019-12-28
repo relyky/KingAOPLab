@@ -11,4 +11,25 @@
 花了一、兩天時間讀碼，把KingAOP的主架構圖逆向弄出來。看得懂就恭禧你了；看不懂就當藝術品看吧。   
 <img src="https://github.com/relyky/KingAOPLab/blob/master/doc/KingAOP%20%E7%B5%90%E6%A7%8B%E5%88%86%E6%9E%90%E9%A1%9E%E5%88%A5%E5%9C%96.png?raw=true" alt="KingAOP結構分析類別圖">
    
+# 測試紀錄
+
+#### 測試紀錄-無AOP
+Step 1
+Step 2
+執行失敗！測試例外！
+Press any key to continue.
+
+#### 測試紀錄-有AOP
+OnEntry
+Step 1
+Step 2
+OnException
+OnExit
+Return 我來自OnException。
+OnSetValue我是誰
+OnGetValue
+foo I am god!
+執行成功。 <--- 明明失敗卻成功。
+Press any key to continue.
+
 (EOF)
