@@ -1,6 +1,8 @@
 # KingAOP Lab
 [KingAOP](https://github.com/AntyaDev/KingAOP)是本人已知現實中最佳C# AOP solution。   
-個人認為實作最完整的是[SheepAspect]，它是仿[AspectJ]實作所以理論上很完整，但實際用起來太複雜不符合現實。而KingAOP是仿[PostSharp]實作的。其它的方案本人就不評論了。
+個人認為實作最完整的是[SheepAspect]，它是仿[AspectJ]實作所以理論上很完整，但實際用起來太複雜不符合現實。而KingAOP是仿[PostSharp]實作的。其它的方案本人就不評論了。   
+
+ 補充：發現基本上無法實作 wait/retry aspect，總分十分扣分四分。（自己打臉自己 Orz）
 
 # 實作原理
 使用 .Net Framework 4.x 才開始支援的 [System.Dynamic](https://docs.microsoft.com/zh-tw/dotnet/api/system.dynamic?view=netframework-4.8) 實作出來的。
