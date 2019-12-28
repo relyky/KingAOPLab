@@ -9,7 +9,7 @@ namespace KingAOPLab.MyAspects
         {
             Console.WriteLine($"{args.Method.Name}::OnEntry");
             int num = 1;
-            foreach(object arg in args.Arguments)
+            foreach (object arg in args.Arguments)
             {
                 Console.WriteLine($"  參數[{num++}] {arg.GetType().Name} {arg.ToString()}");
             }
@@ -18,7 +18,10 @@ namespace KingAOPLab.MyAspects
         public override void OnSuccess(MethodExecutionArgs args)
         {
             Console.WriteLine($"{args.Method.Name}::OnSuccess");
-            Console.WriteLine($"  執行結果 {args.ReturnValue.GetType().Name} {args.ReturnValue.ToString()}");
+            if (args.ReturnValue == null)
+                Console.WriteLine($"  執行結果 Nil");
+            else
+                Console.WriteLine($"  執行結果 {args.ReturnValue.GetType().Name} {args.ReturnValue.ToString()}");
         }
 
         public override void OnException(MethodExecutionArgs args)

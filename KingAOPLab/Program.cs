@@ -25,13 +25,18 @@ namespace KingAOPLab
                 ///※ 必需回傳 dynamic 才能有效觸發KingAOP。 
                 dynamic biz = new MyBusinessClass2();
 
-                biz.QryFormData("Foo", 987, true);
+                MyFormData formData = biz.QryFormData("Foo", 987, true);
 
-                Console.WriteLine("執行成功。");
+                Console.WriteLine();
+                if(formData == null) Console.WriteLine("\r\n無資料無法存檔。");
+
+                biz.SaveFormData(formData);
+
+                Console.WriteLine("\r\n執行完成。");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("執行失敗！" + ex.Message);
+                Console.WriteLine("\r\n執行失敗！" + ex.Message);
             }
 
             Console.WriteLine("Press any key to continue.");

@@ -8,7 +8,8 @@ namespace KingAOPLab
 {
     class MyBusinessClass2 : IDynamicMetaObjectProvider
     {
-        [LogAspect]
+        [LogAspect(AspectPriority = 1)]
+        [IgnoreAspect(AspectPriority = 2)]
         public MyFormData QryFormData(string a, int b, bool c)
         {
             Console.WriteLine("Step 1");
@@ -21,6 +22,16 @@ namespace KingAOPLab
                 b = b,
                 c = c
             };
+        }
+
+        [LogAspect(AspectPriority = 1)]
+        [IgnoreAspect(AspectPriority = 3)]
+        public void SaveFormData(MyFormData formData)
+        {
+            Console.WriteLine("Step 1");
+            Console.WriteLine("Step 2");
+            throw new ApplicationException("例外測試");
+            Console.WriteLine("Step 3");
         }
 
         public DynamicMetaObject GetMetaObject(Expression parameter)
