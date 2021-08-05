@@ -2,7 +2,7 @@
 [KingAOP](https://github.com/AntyaDev/KingAOP)是本人已知現實中，從高分一直被扣分到不實用的 C# AOP solution。   
 個人認為實作最完整的是[SheepAspect]，它是仿[AspectJ]實作所以理論上很完整，但實際用起來太複雜不符合現實。而KingAOP是仿[PostSharp]實作的。其它的方案本人就不評論了。   
 
- 補充 on 2019-12-28：發現基本上無法實作 wait/retry aspect，總分十分扣分四分。（自己打臉自己 Orz）
+ 補充 on 2019-12-28：發現基本上無法實作 wait/retry aspect，總分十分扣分四分。（自己打臉自己 Orz）  
  補充 on 2020-01-07：再一輪評估。無法多重疊加Aspect 再扣一分。且纏繞標的必需 assignment 為 dynamic 型別，這會失去強型別的效益再扣二分。重下結論為不實務但有趣。
 
 # 實作原理
